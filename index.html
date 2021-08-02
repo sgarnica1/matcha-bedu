@@ -6,35 +6,91 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Matcha</title>
-  <link rel="stylesheet" href="./style.css">
 
   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700;800&family=Slabo+27px&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700;800;900&family=Slabo+27px&display=swap"
     rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- MEDIA QUERIES -->
+  <link rel="stylesheet" href="./assets/css/tablet.css" media="screen and (min-width: 700px)">
+  <link rel="stylesheet" href="./assets/css/desktop.css" media="screen and (min-width: 990px)">
 
   <!-- FAVICON -->
   <link rel="shortcut icon" href="https://getmatcha.com/wp-content/uploads/2018/10/favicon.png" type="image/x-icon">
 </head>
 
 <body>
-  <h1>Build your blog. Build your business.</h1>
-  <h4>Instantly publish articles, drive more traffic, grow your email list, and see your blog’s impact on sales.</h4>
-  <form action="">
-    <input type="email" placeholder="Enter email address">
-    <button type="submit">Try it now &rarr;</button>
-  </form>
-  <p>Start publishing today with a <strong>free 7-day trial.</strong>
-    <strong>No credit card</strong> required.
-  </p>
-  <picture>
-    <img src="./assets/img/capterra.png" alt="">
-  </picture>
-  <picture>
-    <source srcset="./assets/img/intro_group_image.png">
-    <img src="./assets/img/intro_group_image.png" alt="">
-  </picture>
+  <header>
+    <nav class="navbar fixed-top">
+      <a href="#" class="navbar__brand">
+        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="Matcha Logo"
+          class="navbar__brand--logo">
+      </a>
+      <button class="navbar__toggler">
+        <span class="navbar__toggler--icon"></span>
+      </button>
+      <div class="navbar__elements">
+        <ul class="navbar__links">
+          <li class="navbar__link-container">
+            <a href="#" class="navbar__link active__page">
+              Platform
+            </a>
+          </li>
+          <li class="navbar__link-container">
+            <a href="#" class="navbar__link">
+              Pricing
+            </a>
+          </li>
+          <li class="navbar__link-container">
+            <a href="#" class="navbar__link">
+              Customers
+            </a>
+          </li>
+          <li class="navbar__link-container">
+            <a href="#" class="navbar__link">
+              Resources
+            </a>
+          </li>
+          <li class="navbar__link-container">
+            <a href="#" class="navbar__link">
+              About
+            </a>
+          </li>
+        </ul>
+        <div class="navbar__buttons">
+          <button class="navbar__button navbar__button--signin">Sign in</button>
+          <button class="navbar__button navbar__button--freetrial">Start free trial</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="main__header">Build your blog. Build your business.</h1>
+    <h4 class="main__description">Instantly publish articles, drive more traffic, grow your email list, and see your
+      blog’s impact on sales.</h4>
+    <form action="" class="form__signup--main">
+      <input type="email" placeholder="Enter email address" class="input--signup">
+      <button type="submit">Try it now &rarr;</button>
+    </form>
+    <p class="main__caption">Start publishing today with a <strong>free 7-day trial.</strong><br>
+      <strong>No credit card</strong> required.
+    </p>
+    <!-- <picture>
+      <img src="./assets/img/capterra.png" alt="">
+    </picture>
+    <picture>
+      <source srcset="./assets/img/intro_group_image.png">
+      <img src="./assets/img/intro_group_image.png" alt="">
+    </picture> -->
+
+  </main>
 </body>
 
 </html>

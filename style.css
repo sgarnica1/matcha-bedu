@@ -1,4 +1,4 @@
-*,
+/* *,
 *::before,
 *::after {
   padding: 0;
@@ -38,4 +38,4 @@ button {
   background: var(--font-color-headers);
   color: white;
   outline: none;
-}
+} */

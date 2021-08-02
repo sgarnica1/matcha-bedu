@@ -1,0 +1,31 @@
+/* NAVIGATION TOGGLER */
+.navbar__toggler {
+  display: none;
+}
+
+/* NAVIGATION DESKTOP */
+header nav {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.navbar__elements {
+  padding: 0;
+  flex-basis: unset;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navbar__links {
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+/* MAIN CONTENT */
+.main__header {
+  font-size: 6rem;
+}
+
+button[type="submit"] {
+  font-size: 1.7rem;
+}

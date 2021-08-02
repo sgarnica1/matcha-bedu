@@ -1,0 +1,230 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-color-headers: #025157;
+  --font-color-paragraph: #46484c;
+  --font-color-light: #fff;
+  --font-color-dark: #000000e6;
+  --background-color-body: #fffbf7;
+  --extra-color: #67b54b;
+  --main-font: "Alegreya", serif;
+  --secondary-font: "Slabo 27px", serif;
+  --text-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --border-radius-measure: 8px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--background-color-body);
+}
+
+button,
+a {
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+*:focus-visible {
+  box-shadow: 0 0 0 2px var(--font-color-dark);
+  border-radius: 2px;
+}
+
+/* NAVIGATION MOBILE */
+header nav {
+  width: 100%;
+  min-height: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.6rem;
+  background-color: var(--background-color-body);
+}
+
+.fixed-top {
+  /* position: fixed; */
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar__toggler {
+  width: 56px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid var(--font-color-headers);
+  border-radius: 4px;
+  padding: 0.8rem;
+}
+
+.navbar__toggler .navbar__toggler--icon {
+  width: 100%;
+  height: 100%;
+  background-image: url("../icon/toggler.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.navbar__toggler:hover {
+  background-color: var(--font-color-headers);
+  transition: ease 0.3s;
+}
+.navbar__toggler:hover .navbar__toggler--icon {
+  background-image: url("../icon/toggler_white.svg");
+  transition: ease 0.3s;
+}
+.navbar__elements {
+  padding-top: 1rem;
+  flex-basis: 100%;
+  flex-grow: 1;
+  display: none;
+}
+
+.navbar__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar__link {
+  width: 100%;
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: var(--font-color-headers);
+  font-family: var(--text-font);
+}
+
+.navbar__link:hover {
+  color: var(--font-color-dark);
+}
+
+.navbar__link.active__page {
+  color: var(--font-color-dark);
+}
+
+.navbar__buttons {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+.navbar__buttons .navbar__button {
+  margin: 0 auto;
+  height: 5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  font-family: var(--text-font);
+  font-size: 1.4rem;
+}
+.navbar__button--signin {
+  border: none;
+  background: none;
+  font-weight: 600;
+  color: var(--extra-color);
+}
+.navbar__button--freetrial {
+  padding: 0 1.5rem;
+  color: var(--font-color-light);
+  border: 1px solid var(--extra-color);
+  border-radius: 5px;
+  background-color: var(--extra-color);
+  transition: ease 0.3s;
+}
+
+.navbar__button--freetrial:hover {
+  transform: scale(1.1);
+  transition: ease 0.3s;
+}
+
+/* MAIN CONTENT */
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 2rem 1rem 2rem;
+}
+
+.main__header {
+  margin-bottom: 2rem;
+  color: var(--font-color-headers);
+  text-align: center;
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 3.2rem;
+}
+
+.main__description {
+  margin-bottom: 2rem;
+  color: var(--font-color-paragraph);
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+  font-family: var(--secondary-font);
+}
+
+.form__signup--main {
+  height: 55px;
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__signup--main .input--signup {
+  width: 55%;
+  max-width: 25rem;
+  height: 100%;
+  padding: 6px 20px;
+  border: 1px solid #b6b6b6;
+  border-top-left-radius: var(--border-radius-measure);
+  border-bottom-left-radius: var(--border-radius-measure);
+  outline: none;
+  font-family: var(--text-font);
+  font-size: 1.7rem;
+}
+
+button[type="submit"] {
+  height: 100%;
+  width: 45%;
+  max-width: 150px;
+  padding: 6px 20px;
+  background-color: var(--font-color-headers);
+  color: var(--font-color-light);
+  font-size: 1.4rem;
+  border: 1px solid var(--font-color-headers);
+  border-top-right-radius: var(--border-radius-measure);
+  border-bottom-right-radius: var(--border-radius-measure);
+  outline: none;
+}
+
+.main__caption {
+  color: #8b8b8bcc;
+  font-weight: 400;
+  font-family: var(--text-font);
+  font-size: 1.7rem;
+  text-align: center;
+}
