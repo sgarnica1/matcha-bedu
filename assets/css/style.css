@@ -52,6 +52,7 @@ header nav {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   padding: 0.8rem 1.6rem;
   background-color: var(--background-color-body);
 }
@@ -94,10 +95,20 @@ header nav {
   transition: ease 0.3s;
 }
 .navbar__elements {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 65px;
+  background-color: var(--background-color-body);
+  padding: 0 1.6rem;
   padding-top: 1rem;
   flex-basis: 100%;
   flex-grow: 1;
   display: none;
+}
+
+.navbar__elements.show {
+  display: unset;
 }
 
 .navbar__links {
@@ -128,7 +139,7 @@ header nav {
   padding: 1rem;
 }
 .navbar__buttons .navbar__button {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   height: 5.5rem;
   display: flex;
   justify-content: center;
