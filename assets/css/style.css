@@ -87,13 +87,15 @@ header nav {
 }
 
 .navbar__toggler:hover {
-  background-color: var(--font-color-headers);
+  /* background-color: var(--font-color-headers); */
+  box-shadow: 0 0 0 2px #e59700;
+  border-color: #e59700;
   transition: ease 0.3s;
 }
-.navbar__toggler:hover .navbar__toggler--icon {
+/* .navbar__toggler:hover .navbar__toggler--icon {
   background-image: url("../icon/toggler_white.svg");
   transition: ease 0.3s;
-}
+} */
 .navbar__elements {
   position: absolute;
   left: 0;
