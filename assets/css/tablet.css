@@ -2,3 +2,27 @@
 .main__header {
   font-size: 4.6rem;
 }
+
+/* PROMO SECTION */
+.promo {
+  margin: 0 50px;
+}
+
+/* PROMO SECTION */
+@media (min-width: 900px) {
+  .promo {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 80px;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .promo article.promo__video {
+    width: 65%;
+  }
+  .promo article.promo__description {
+    width: 35%;
+  }
+}

@@ -15,8 +15,7 @@
   --extra-color: #67b54b;
   --main-font: "Alegreya", serif;
   --secondary-font: "Slabo 27px", serif;
-  --text-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --text-font: "Open Sans", sans-serif;
   --border-radius-measure: 8px;
 }
 
@@ -39,6 +38,19 @@ ul {
   list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--main-font);
+  color: var(--font-color-headers);
+}
+p {
+  font-family: var(--text-font);
+}
+
 *:focus-visible {
   box-shadow: 0 0 0 2px var(--font-color-dark);
   border-radius: 2px;
@@ -58,7 +70,7 @@ header nav {
 }
 
 .fixed-top {
-  /* position: fixed; */
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
@@ -171,7 +183,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10rem 2rem 1rem 2rem;
+  padding: 15rem 2rem 1rem 2rem;
 }
 
 .main__header {
@@ -254,4 +266,70 @@ picture.banner img {
 picture.image__intro img {
   width: 100%;
   max-width: 900px;
+}
+
+/* PROMO SECTION */
+.promo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  padding: 40px 20px;
+}
+
+video {
+  width: 100%;
+  max-width: 42rem;
+}
+
+.promo__video {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.promo__video img {
+  width: 14rem;
+}
+.promo__video picture {
+  width: 100%;
+}
+
+.promo__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+}
+
+.promo__description__title {
+  width: 100%;
+  margin-bottom: 2.5rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: left;
+}
+.promo__description__text {
+  margin-bottom: 2.5rem;
+  font-size: 1.7rem;
+  text-align: left;
+  color: var(--font-color-paragraph);
+}
+.promo__description span {
+  width: 100%;
+  margin-bottom: 2.5rem;
+  font-size: 1.7rem;
+  color: #8b8b8bcc;
+  font-family: var(--text-font);
+  text-align: left;
+  display: inline-block;
+}
+
+.promo__description__form {
+  justify-content: left;
 }
