@@ -1,3 +1,13 @@
+/* GENERAL CONFIG */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 45px;
+}
+
 /* NAVIGATION TOGGLER */
 .navbar__toggler {
   display: none;
@@ -24,10 +34,18 @@ header nav {
 }
 
 /* MAIN CONTENT */
+main {
+  padding-top: 20rem;
+}
 .main__header {
   font-size: 6rem;
 }
 
 button[type="submit"] {
   font-size: 1.7rem;
+}
+
+/* PROMO SECTION */
+.promo__description__title {
+  font-size: 4rem;
 }
