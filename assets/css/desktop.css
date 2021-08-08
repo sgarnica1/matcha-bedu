@@ -49,3 +49,35 @@ button[type="submit"] {
 .promo__description__title {
   font-size: 4rem;
 }
+
+/* FEATURES */
+.features {
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, 350px);
+  padding: 5% 10%;
+}
+.features__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.features__card .feature__image picture {
+  display: block;
+}
+.features__card .feature__image picture,
+.features__card .feature__image picture img {
+  height: 100%;
+  margin-top: 0;
+}
+
+@media (min-width: 1100px) {
+  .features__card .feature__image {
+    width: 40%;
+    height: 80%;
+    display: unset;
+    position: relative;
+  }
+}
