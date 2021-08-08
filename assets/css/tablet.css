@@ -8,6 +8,25 @@
   margin: 0 50px;
 }
 
+/* TESTIMONIALS */
+.testimonials {
+  display: flex;
+  gap: 30px;
+  padding: 5rem 6rem;
+}
+.testimonials__overview {
+  width: 80%;
+  padding-right: 3rem;
+}
+.testimonials__title {
+  font-size: 5rem;
+  line-height: 55px;
+  margin-bottom: 3rem;
+}
+.testimonials__description {
+  margin-bottom: 3rem;
+}
+
 /* PROMO SECTION */
 @media (min-width: 900px) {
   .promo {
