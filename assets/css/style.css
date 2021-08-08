@@ -376,6 +376,12 @@ video {
   font-size: 1.6rem;
   font-family: var(--text-font);
   font-weight: 600;
+  display: inline-block;
+  transition: ease 0.3s all;
+}
+.feature__content .feature__link:hover {
+  transition: ease 0.3s all;
+  transform: translateX(5px);
 }
 .features__card .feature__image {
   display: none;
