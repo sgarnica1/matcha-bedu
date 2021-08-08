@@ -8,6 +8,7 @@
 
 :root {
   --font-color-headers: #025157;
+  --font-color-headers-light: #343434;
   --font-color-paragraph: #46484c;
   --font-color-light: #fff;
   --font-color-dark: #000000e6;
@@ -332,4 +333,59 @@ video {
 
 .promo__description__form {
   justify-content: left;
+}
+
+/* FEATURES */
+.features {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  padding: 4rem 0 2rem;
+  background-color: #025157;
+}
+.features__card {
+  margin: 0 1.5rem 2.5rem;
+  background-color: white;
+  border-radius: 5px;
+}
+.feature__content {
+  padding: 3rem 3rem 4rem 3rem;
+}
+.feature__content .feature__icon {
+  margin-bottom: 1.5rem;
+}
+.feature__content .feature__icon img {
+  width: 5rem;
+  height: 5rem;
+}
+.feature__content .feature__header {
+  margin-bottom: 1.5rem;
+  font-size: 2.4rem;
+  font-family: var(--text-font);
+  font-weight: 400;
+  color: var(--font-color-headers-light);
+  line-height: 28px;
+}
+.feature__content .feature__description {
+  margin-bottom: 1.5rem;
+  color: #7e7e7e;
+  font-size: 1.6rem;
+}
+.feature__content .feature__link {
+  color: var(--extra-color);
+  font-size: 1.6rem;
+  font-family: var(--text-font);
+  font-weight: 600;
+}
+.features__card .feature__image {
+  display: none;
+}
+
+@media (min-width: 650px) {
+  /* FEATURES */
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    padding: 4rem 1.5rem 2rem;
+  }
 }
