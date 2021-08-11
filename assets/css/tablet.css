@@ -27,6 +27,22 @@
   margin-bottom: 3rem;
 }
 
+/* FUNCTIONALITIES */
+.functionalities__intro .functionalities__title {
+  font-size: 5rem;
+}
+.functionalities__intro .functionalities__description {
+  max-width: 50rem;
+}
+.functionalities__cards {
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(2, 1fr);
+  gap: 2rem;
+}
+.functionalities__card {
+  margin-bottom: 0rem;
+}
+
 /* PROMO SECTION */
 @media (min-width: 900px) {
   .promo {
