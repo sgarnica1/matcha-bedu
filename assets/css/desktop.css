@@ -8,6 +8,24 @@ h6 {
   line-height: 45px;
 }
 
+header nav,
+main,
+.promo,
+.functionalities__intro,
+.functionalities__cards {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+header {
+  min-height: 78px;
+  width: 100%;
+  position: fixed;
+  background-color: var(--background-color-body);
+  z-index: 999;
+}
+
 /* NAVIGATION TOGGLER */
 .navbar__toggler {
   display: none;
@@ -55,6 +73,7 @@ button[type="submit"] {
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, 350px);
   padding: 5% 10%;
+  justify-content: center;
 }
 .features__card {
   display: flex;
@@ -62,6 +81,7 @@ button[type="submit"] {
   align-items: center;
   position: relative;
   overflow: hidden;
+  max-width: 60rem;
 }
 
 .features__card .feature__image picture {
@@ -78,11 +98,15 @@ button[type="submit"] {
   display: flex;
   gap: 30px;
   padding: 5% 15%;
+  justify-content: center;
 }
 .testimonials__overview {
   margin-top: 6rem;
+  max-width: 80rem;
 }
-
+.testimonials__carousel {
+  margin: 0;
+}
 /* FUNCTIONALITIES */
 .functionalities {
   padding: 3rem 10% 6rem 10%;
