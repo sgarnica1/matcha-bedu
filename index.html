@@ -29,7 +29,7 @@
   <link rel="shortcut icon" href="https://getmatcha.com/wp-content/uploads/2018/10/favicon.png" type="image/x-icon">
 
   <!-- SCRIPTS -->
-  <script src="./assets/js/app.js" defer></script>
+  <script src="./assets/js/bootstrap.js" defer></script>
 
 </head>
 
@@ -37,7 +37,7 @@
 
   <!-- NAVBAR -->
   <header>
-    <nav class="navbar fixed-top">
+    <!-- <nav class="navbar-custom fixed-top">
       <a href="/" class="navbar__brand">
         <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="Matcha Logo"
           class="navbar__brand--logo">
@@ -78,7 +78,52 @@
           <button class="navbar__button navbar__button--freetrial">Start free trial</button>
         </div>
       </div>
+    </nav> -->
+    <nav class="navbar fixed-top navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="Matcha Logo"
+            class="navbar__brand--logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="Matcha Logo"
+                class="navbar__brand--logo">
+            </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Platform</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Customers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <button class="btn btn-outline-success" type="submit">Sign in</button>
+              <button class="btn btn-outline-success" type="submit">Free trial</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </nav>
+
   </header>
 
 

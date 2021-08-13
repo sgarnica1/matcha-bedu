@@ -33,6 +33,7 @@ a {
   cursor: pointer;
   text-decoration: none;
   outline: none;
+  font-size: 1.7rem;
 }
 
 ul {
@@ -58,7 +59,7 @@ p {
 }
 
 /* NAVIGATION MOBILE */
-header nav {
+header nav.navbar-custom {
   width: 100%;
   min-height: 65px;
   display: flex;
@@ -177,6 +178,51 @@ header nav {
   transition: ease 0.3s;
 }
 
+/* NAVIGATION BOOTSTRAP */
+nav.navbar {
+  min-height: 65px;
+  padding: 0.5rem 1rem;
+  background-color: var(--background-color-body);
+}
+.offcanvas {
+  padding: 2rem;
+}
+.offcanvas-body .nav-item .nav-link,
+.offcanvas-body form button {
+  font-size: 1.7rem;
+  color: var(--font-color-headers);
+}
+.offcanvas-body .nav-item .nav-link.active {
+  color: #000000e6;
+}
+.nav-item {
+  margin-bottom: 0.8rem;
+}
+.offcanvas-body form button:first-child {
+  padding: 0;
+  margin-right: 2rem;
+  border: none;
+  color: var(--extra-color);
+}
+.offcanvas-body form button:last-child {
+  padding: 0.8rem 1.5rem;
+  color: var(--font-color-light);
+  background-color: var(--extra-color);
+  border-color: var(--extra-color);
+  border-radius: 5px;
+}
+.navbar-toggler {
+  padding: 0.8rem 1.5rem;
+  border-color: var(--font-color-headers);
+  border-radius: 5px;
+}
+.navbar-toggler-icon {
+  background-image: url("../icon/toggler.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 /* MAIN CONTENT */
 main {
   width: 100%;
@@ -227,7 +273,7 @@ main {
   font-size: 1.7rem;
 }
 
-button[type="submit"] {
+.form__signup--main button[type="submit"] {
   height: 100%;
   width: 45%;
   max-width: 150px;
@@ -240,7 +286,7 @@ button[type="submit"] {
   border-bottom-right-radius: var(--border-radius-measure);
   outline: none;
 }
-button[type="submit"]:hover {
+.form__signup--main button[type="submit"]:hover {
   background-color: #03363a;
 }
 

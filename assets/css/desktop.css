@@ -8,7 +8,7 @@ h6 {
   line-height: 45px;
 }
 
-header nav,
+header nav.navbar-custom,
 main,
 .promo,
 .functionalities__intro,
@@ -32,7 +32,7 @@ header {
 }
 
 /* NAVIGATION DESKTOP */
-header nav {
+header nav.navbar {
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -51,6 +51,15 @@ header nav {
   margin: 0 auto;
 }
 
+/* NAVIGATION BOOTSTRAP */
+.nav-item {
+  margin-bottom: 0rem;
+  margin: 0 1rem;
+}
+.offcanvas-body .nav-item .nav-link.active {
+  color: #000000e6;
+}
+
 /* MAIN CONTENT */
 main {
   padding-top: 20rem;
@@ -59,7 +68,7 @@ main {
   font-size: 6rem;
 }
 
-button[type="submit"] {
+.form__signup--main button[type="submit"] {
   font-size: 1.7rem;
 }
 
