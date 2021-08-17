@@ -583,6 +583,35 @@ video {
   opacity: 1;
 }
 
+/* CAROUSEL BOOTSTRAP */
+.carousel-item .card {
+  width: 100%;
+  max-width: 35rem;
+  border-radius: 1rem;
+}
+.carousel-indicators {
+  margin-bottom: -40px;
+}
+.card .card-media img {
+  border-radius: 1rem 1rem 0 0;
+}
+.carousel__media--company {
+  width: 8rem;
+  height: 8rem;
+  background-color: #f9da73;
+  right: 2rem;
+  bottom: -3rem;
+}
+.carousel__media--company img {
+  width: 75%;
+  height: auto;
+}
+.card-footer a {
+  background-color: var(--font-color-headers);
+  color: white;
+  border-radius: 1rem;
+}
+
 /* FUNCTIONALITIES */
 .functionalities {
   padding: 3rem 2rem;
