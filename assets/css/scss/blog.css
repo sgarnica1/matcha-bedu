@@ -23,6 +23,10 @@
   background-color: #025157;
 }
 
+.blog button:hover {
+  background-color: #061d1f;
+}
+
 .blog {
   max-width: unset;
   margin: 0;
@@ -69,6 +73,64 @@
 .blog .process-list .process-description p {
   font-size: 17px;
   font-weight: 300;
+  color: #46484c;
+  font-family: "Open Sans", sans-serif;
+}
+
+.blog .card {
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.blog .card img {
+  border-radius: 5px 5px 0 0;
+}
+
+.blog .card-body {
+  padding: 2rem;
+}
+
+.blog .card-body .card-title {
+  font-size: 26px;
+  margin-bottom: 2rem;
+  color: #343434;
+  font-family: "Open Sans", sans-serif;
+}
+
+.blog .card-body .metadata {
+  margin-bottom: 2rem;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.blog .card-body .metadata .category {
+  color: #67b54b;
+}
+
+.blog .card-body .metadata .read-time {
+  color: #979797;
+}
+
+.blog .card-body .card-text {
+  margin-bottom: 2rem;
+  font-size: 18px;
+  line-height: 3rem;
+  color: #343434;
+}
+
+.blog .card-body .card-text .read-more a {
+  text-decoration: underline;
+}
+
+.blog .card .author img {
+  width: 35px;
+  margin-right: 10px;
+}
+
+.blog .card .author p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 15px;
   color: #46484c;
   font-family: "Open Sans", sans-serif;
 }

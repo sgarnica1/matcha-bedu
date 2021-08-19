@@ -2,6 +2,7 @@ $font-headers: "Alegreya", serif;
 $font-main: "Slabo 27px", serif;
 $font-alternative: "Open Sans", sans-serif;
 $color-main: #025157;
+$color-hover: #061d1f;
 $color-secondary: #46484c;
 $color-light: #fff;
 $color-dark: #000;
@@ -28,4 +29,7 @@ $color-alternative-2: #343434;
   font-family: $font-alternative;
   color: $color-light;
   background-color: $color-main;
+}
+%button:hover {
+  background-color: $color-hover;
 }
