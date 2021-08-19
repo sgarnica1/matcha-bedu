@@ -8,6 +8,7 @@
 
 :root {
   --font-color-headers: #025157;
+  --color-hover: #061d1f;
   --font-color-headers-light: #343434;
   --font-color-paragraph: #46484c;
   --font-color-light: #fff;
@@ -611,6 +612,10 @@ video {
   color: white;
   border-radius: 1rem;
 }
+.card-footer a:hover {
+  background-color: var(--color-hover);
+  color: white;
+}
 
 /* FUNCTIONALITIES */
 .functionalities {
@@ -711,6 +716,16 @@ video {
 }
 .functionalities__card__img .card__img--background {
   width: 100%;
+}
+
+/* BANNER PEOPLE */
+.banner__people {
+  height: 350px;
+  background: url("https://getmatcha.com/wp-content/themes/getmatcha/img/home_people.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--font-color-light);
 }
 
 @media (min-width: 650px) {
