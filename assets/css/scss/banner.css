@@ -1,0 +1,95 @@
+.try-it h2 {
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Alegreya", serif;
+}
+
+@media (max-width: 500px) {
+  .try-it h2 {
+    font-size: 32px;
+  }
+}
+
+.try-it {
+  background-color: #96d178;
+  padding: 5%;
+  margin-top: -3.125rem;
+}
+
+.try-it h2 {
+  margin-bottom: 3rem;
+}
+
+.try-it p {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.banner--free-trial {
+  padding: 5% 10%;
+}
+
+.banner--free-trial .container {
+  border-radius: 10px;
+  padding: 5%;
+  background-color: #025157;
+}
+
+.banner--free-trial .container .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+.banner--free-trial .container h3 {
+  font-size: 3.4rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.banner--free-trial .container p {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.banner--free-trial .container p a {
+  display: inline-block;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  color: #67b54b;
+}
+
+.banner--free-trial .container p a:hover {
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.banner--free-trial .container form button[type="submit"] {
+  border: none;
+  font-weight: 600;
+  max-width: 20rem;
+  background-color: #67b54b;
+}
+
+.banner--free-trial .container form button[type="submit"]:hover {
+  background-color: #343434;
+}
+/*# sourceMappingURL=banner.css.map */
