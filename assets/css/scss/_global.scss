@@ -10,10 +10,11 @@ $color-alternative: #67b54b;
 $color-alternative-2: #343434;
 
 %headers {
-  font-family: $font-headers;
   font-size: 60px;
   font-weight: 900;
   margin-bottom: 20px;
+  text-align: center;
+  font-family: $font-headers;
   @media (max-width: 500px) {
     font-size: 32px;
   }
@@ -32,4 +33,10 @@ $color-alternative-2: #343434;
 }
 %button:hover {
   background-color: $color-hover;
+}
+
+// PX to REM
+@function toRem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
 }

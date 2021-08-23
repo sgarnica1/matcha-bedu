@@ -1,0 +1,63 @@
+@import "./_global.scss";
+
+// Try It Banner
+.try-it {
+  background-color: #96d178;
+  padding: 5%;
+  margin-top: toRem(-50);
+  h2 {
+    @extend %headers;
+    margin-bottom: 3rem;
+  }
+  p {
+    font-size: 1.5rem;
+    color: $color-light;
+  }
+}
+
+.banner--free-trial {
+  padding: 5% 10%;
+  .container {
+    border-radius: 10px;
+    padding: 5%;
+    background-color: $color-main;
+    .col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+    }
+    h3 {
+      font-size: 3.4rem;
+      font-weight: 900;
+      margin-bottom: 2rem;
+      color: $color-light;
+    }
+    p {
+      font-size: 1.8rem;
+      color: $color-light;
+      a {
+        display: inline-block;
+        transition: ease 0.5s;
+        transform: translateX(0px);
+        color: $color-alternative;
+      }
+      a:hover {
+        transition: ease 0.5s;
+        transform: translateX(10px);
+      }
+    }
+    form {
+      button[type="submit"] {
+        border: none;
+        font-weight: 600;
+        max-width: 20rem;
+        background-color: $color-alternative;
+      }
+      button[type="submit"]:hover {
+        background-color: $color-alternative-2;
+      }
+    }
+  }
+}
